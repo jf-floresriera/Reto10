@@ -4,8 +4,10 @@ name: Compilar APK
 on:
   push:
     branches: ["**"]
+    tags: ["v*"]
     paths-ignore:
       - "data/raw/**"
+      - "assets/**"
       - "docs/**"
       - "**.md"
   pull_request:
@@ -73,6 +75,13 @@ jobs:
           name: EvaExplorer-apk
           path: dist/*.apk
           retention-days: 30
+
+      # Al crear una etiqueta (git tag v1.0.0 && git push origin v1.0.0) el APK se publica en Releases.
+      - name: Publicar APK en Releases (solo con etiquetas v*)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.apk
 
       - name: Reportar error como comentario del commit
         if: failure()
