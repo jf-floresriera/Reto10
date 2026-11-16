@@ -1,0 +1,2 @@
+data/raw/municipios_shp/*.shp filter=lfs diff=lfs merge=lfs -text
+data/raw/municipios_shp/*.dbf filter=lfs diff=lfs merge=lfs -text
