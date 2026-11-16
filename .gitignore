@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+.DS_Store
+.idea/
+
+# Secretos locales (app token de datos.gov.co)
+local.properties
+
+# Python
+__pycache__/
+*.pyc
+.venv/
