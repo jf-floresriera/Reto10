@@ -22,7 +22,7 @@
 Pero este repositorio es también una **guía de estudio**. Cada parte del proyecto se explica en detalle: qué hace, qué parámetros usa, por qué se tomó cada decisión y cómo se construyó, paso a paso, desde la idea hasta un APK compilado automáticamente en GitHub. Si quieres aprender a desarrollar una app Android real que consume una API pública y dibuja un mapa, esta guía está pensada para ti.
 
 > [!NOTE]
-> **Estado del proyecto (léelo primero).** La app **compila en GitHub Actions** y el GeoJSON de municipios está **validado** (1.105 municipios, códigos únicos de 5 dígitos). Lo que **todavía no está verificado** es el comportamiento en un teléfono real: las consultas contra datos.gov.co, el dibujo del mapa y el formato exacto de la petición v3. Las secciones afectadas están marcadas con 🟡. Detalle completo en la [sección 12](#estado).
+> **Estado del proyecto (léelo primero).** La app **compila en GitHub Actions** y el GeoJSON de municipios está **validado** (1.105 municipios, códigos únicos de 5 dígitos).
 
 ---
 
